@@ -1,9 +1,32 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 const Header = () => {
   return (
-    <div>
-      <h1>header</h1>
+    <div className="header">
+      <div>
+        <h1>
+          <Link to="/" className="logo">
+            Electrics Shop
+          </Link>
+        </h1>
+      </div>
+      <div className="header-links">
+        <ul>
+          <li>
+            <Link to="/home">Home</Link>
+          </li>
+          <li>
+            <Link to="/signup">Sign up </Link>
+          </li>
+          <li>
+            <Link to="/cart" className="cart">
+              <i className="fa-solid fa-cart-shopping"></i>
+              Cart{" "}
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

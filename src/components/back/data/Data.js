@@ -37,7 +37,7 @@ const data = {
       image: "../../image/earphone.jpg",
     },
     {
-      id: "7",
+      id: "7", 
       name: "Asus laptop",
       price: 45000,
       image: "../../image/asus.jpg",
