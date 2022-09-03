@@ -14,7 +14,7 @@ const Header = () => {
       <div className="header-links">
         <ul>
           <li>
-            <Link to="/home">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/signup">Sign up </Link>
@@ -22,7 +22,6 @@ const Header = () => {
           <li>
             <Link to="/cart" className="cart">
               <i className="fa-solid fa-cart-shopping"></i>
-              Cart{" "}
             </Link>
           </li>
         </ul>

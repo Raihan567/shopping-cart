@@ -1,0 +1,22 @@
+.product {
+  width: 80%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #dde;
+  border-radius: 5px;
+}
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card {
+  width: 70%;
+  /* height: 400px; */
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 0.6rem;
+  margin: 2rem 1rem;
+}
