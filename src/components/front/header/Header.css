@@ -34,3 +34,7 @@
 .header-links ul li a:hover {
   color: #fffc3c;
 }
+.card{
+  width: 300px;
+  height: 400px;
+}

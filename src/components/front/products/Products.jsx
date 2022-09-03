@@ -5,11 +5,13 @@ const Products = ({ productItems }) => {
     <div className="product">
       {productItems.map((productItem) => (
         <div className="card">
-          <div key={productItem.id} className='img-grid'>
-            <img src={productItem?.image} alt={productItem.name} />
+          <div key={productItem.id} className="img-grid">
+            <img src={productItem.image} alt={productItem.name} />
           </div>
           <div className="card-text">
             <h3>{productItem.name}</h3>
+          </div>
+          <div>
             <p>{productItem.price} BDT</p>
           </div>
           <div className="add-to-cart-btn">
