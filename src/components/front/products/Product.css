@@ -6,7 +6,6 @@
   flex-wrap: wrap;
   background-color: #dde;
   border-radius: 5px;
-
 }
 .img-grid {
   width: 100%;
@@ -14,8 +13,10 @@
   min-height: 300px;
   object-fit: cover;
   display: block;
-
-
+  transition: all 0.4s ease-in-out;
+}
+.img-grid:hover{
+  transform: scale(1.1);
 }
 .card {
   width: 300px;
@@ -25,12 +26,27 @@
   background-color: #fff;
   padding: 0.6rem;
   margin: 2rem 1rem;
+  box-shadow: -8px 11px 25px -7px rgba(0,0,0,0.5);
 }
-.add-to-cart-btn button{
-  color: black;
-  background-color: #fffc3c;
+.add-to-cart-btn button {
+  color: white;
+  background-color: black;
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
   border-radius: 0.2rem;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  text-transform: capitalize;
+}
+.price-text {
+  margin: 0.2rem 0;
+}
+.title-text {
+  text-transform: capitalize;
+}
+.add-to-cart-btn button:hover{
+  background-color: red;
+  transition: all 0.4s ease-in-out;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Product.css";
-const Products = ({ productItems }) => {
+const Products = ({ productItems, handleAddProduct }) => {
+ 
   return (
     <div className="product">
       {productItems.map((productItem) => (
@@ -8,14 +9,14 @@ const Products = ({ productItems }) => {
           <div key={productItem.id} className="img-grid">
             <img src={productItem.image} alt={productItem.name} />
           </div>
-          <div className="card-text">
+          <div className="title-text">
             <h3>{productItem.name}</h3>
           </div>
-          <div>
+          <div className="price-text">
             <p>{productItem.price} BDT</p>
           </div>
           <div className="add-to-cart-btn">
-            <button>Add to cart</button>
+            <button onClick={()=>handleAddProduct(productItem)}>Add to cart</button>
           </div>
         </div>
       ))}
